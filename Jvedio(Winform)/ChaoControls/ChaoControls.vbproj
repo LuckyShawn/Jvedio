@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00A59B56-4EDB-4061-85F3-C1B91F77BBAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ChaoControls</RootNamespace>
+    <AssemblyName>ChaoControls</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ChaoControls.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ChaoControls.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chao_Button.Designer.vb">
+      <DependentUpon>Chao_Button.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_Button.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_ContextStripMenu.Designer.vb">
+      <DependentUpon>Chao_ContextStripMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_ContextStripMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chao_FlowLayoutPanel.Designer.vb">
+      <DependentUpon>Chao_FlowLayoutPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_FlowLayoutPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chao_FluidPanel.Designer.vb">
+      <DependentUpon>Chao_FluidPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_FluidPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chao_ImageViewer.Designer.vb">
+      <DependentUpon>Chao_ImageViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_ImageViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_InheritsListBox.Designer.vb">
+      <DependentUpon>Chao_InheritsListBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_InheritsListBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chao_ListBox.Designer.vb">
+      <DependentUpon>Chao_ListBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_ListBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_Panel.Designer.vb">
+      <DependentUpon>Chao_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_Panel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chao_SimpleMenu.Designer.vb">
+      <DependentUpon>Chao_SimpleMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_SimpleMenu.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chao_ProgressIndicators.Designer.vb">
+      <DependentUpon>Chao_ProgressIndicators.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_ProgressIndicators.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_SearchBox.Designer.vb">
+      <DependentUpon>Chao_SearchBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_SearchBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_Sliders.Designer.vb">
+      <DependentUpon>Chao_Sliders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_Sliders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_StatusIndicator.Designer.vb">
+      <DependentUpon>Chao_StatusIndicator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_StatusIndicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_TabSelectorBar.Designer.vb">
+      <DependentUpon>Chao_TabSelectorBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_TabSelectorBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_HscrollBar.Designer.vb">
+      <DependentUpon>Chao_HscrollBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_HscrollBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_TextBox.Designer.vb">
+      <DependentUpon>Chao_TextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_TextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_TitlePanel.Designer.vb">
+      <DependentUpon>Chao_TitlePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_TitlePanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_Switch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_Switch.Designer.vb">
+      <DependentUpon>Chao_Switch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Chao_CheckBox.Designer.vb">
+      <DependentUpon>Chao_CheckBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_CheckBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chao_VscrollBar.Designer.vb">
+      <DependentUpon>Chao_VscrollBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chao_VscrollBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chao_CheckBox.resx">
+      <DependentUpon>Chao_CheckBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_Button.resx">
+      <DependentUpon>Chao_Button.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_ContextStripMenu.resx">
+      <DependentUpon>Chao_ContextStripMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_ImageViewer.resx">
+      <DependentUpon>Chao_ImageViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_ListBox.resx">
+      <DependentUpon>Chao_ListBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_HscrollBar.resx">
+      <DependentUpon>Chao_HscrollBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_SimpleMenu.resx">
+      <DependentUpon>Chao_SimpleMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_ProgressIndicators.resx">
+      <DependentUpon>Chao_ProgressIndicators.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_Sliders.resx">
+      <DependentUpon>Chao_Sliders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_StatusIndicator.resx">
+      <DependentUpon>Chao_StatusIndicator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_TextBox.resx">
+      <DependentUpon>Chao_TextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_VscrollBar.resx">
+      <DependentUpon>Chao_VscrollBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_SearchBox.resx">
+      <DependentUpon>Chao_SearchBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_TabSelectorBar.resx">
+      <DependentUpon>Chao_TabSelectorBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chao_Switch.resx">
+      <DependentUpon>Chao_Switch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EmbeddedResource Include="app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Image\Chao_CheckBox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Chao_Switch.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\窗口化1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\窗口化2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\关闭1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\关闭2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\选项1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\选项2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\最大化1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\最大化2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\最小化1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\最小化2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

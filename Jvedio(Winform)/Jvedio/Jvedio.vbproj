@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\ILMerge.3.0.29\build\ILMerge.props" Condition="Exists('packages\ILMerge.3.0.29\build\ILMerge.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC146EC2-8AFA-4557-A33A-024FD8BB920C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Jvedio.My.MyApplication</StartupObject>
+    <RootNamespace>Jvedio</RootNamespace>
+    <AssemblyName>Jvedio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Jvedio.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChaoControls">
+      <HintPath>..\ChaoControls\bin\Debug\ChaoControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ChaoForm">
+      <HintPath>..\ChaoForm\bin\Debug\ChaoForm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="FormBiaoqian.Designer.vb">
+      <DependentUpon>FormBiaoqian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBiaoqian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBus.designer.vb">
+      <DependentUpon>FormBus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdit.designer.vb">
+      <DependentUpon>FormEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfo.designer.vb">
+      <DependentUpon>FormInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdate.Designer.vb">
+      <DependentUpon>FormUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewPicture.Designer.vb">
+      <DependentUpon>FormViewPicture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewPicture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYanyuan.Designer.vb">
+      <DependentUpon>FormYanyuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormYanyuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLeibie.Designer.vb">
+      <DependentUpon>FormLeibie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLeibie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuickEdit.Designer.vb">
+      <DependentUpon>FormQuickEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuickEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetup.designer.vb">
+      <DependentUpon>FormSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module_Function.vb" />
+    <Compile Include="Module_Net.vb" />
+    <Compile Include="Module_Settings.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Module_Variable.vb" />
+    <Compile Include="Module_InfoPanel.vb" />
+    <Compile Include="Resource_FormInfo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_FormInfo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource_FormTools.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_FormTools.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource_Image.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_Image.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource_Title.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_Title.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBiaoqian.resx">
+      <DependentUpon>FormBiaoqian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBus.resx">
+      <DependentUpon>FormBus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdit.resx">
+      <DependentUpon>FormEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfo.resx">
+      <DependentUpon>FormInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdate.resx">
+      <DependentUpon>FormUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewPicture.resx">
+      <DependentUpon>FormViewPicture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYanyuan.resx">
+      <DependentUpon>FormYanyuan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLeibie.resx">
+      <DependentUpon>FormLeibie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuickEdit.resx">
+      <DependentUpon>FormQuickEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetup.resx">
+      <DependentUpon>FormSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource_FormInfo.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_FormInfo.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource_FormTools.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_FormTools.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource_Image.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_Image.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource_Title.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_Title.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Arrow_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\右箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\左箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\NoPrinting_S.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\播放.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\不喜欢.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\喜欢.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\添加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\详情.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\播放4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\勾选喜爱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\未选喜爱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\删除_白.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\演员.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\FormInfo\喜爱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\FormInfo\喜爱填充.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\FormInfo\删 除 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\FormInfo\返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\FormInfo\演员.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\FormInfo\BigPicNotFound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\FormInfo\ActressesNotFound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\FormInfo\编辑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\ICON\视频管理_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\ICON\视频管理_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\皮肤.png" />
+    <None Include="Resources\皮肤 %282%29.png" />
+    <None Include="Resources\爱心.png" />
+    <None Include="Resources\查看.png" />
+    <None Include="Resources\设 置.png" />
+    <None Include="Resources\关于.png" />
+    <None Include="Resources\下载.png" />
+    <None Include="Resources\更新.png" />
+    <None Include="Resources\文件.png" />
+    <None Include="Resources\文件 %281%29.png" />
+    <None Include="Image\ICON\Jvedio.ico" />
+    <None Include="Image\ICON\Title.png" />
+    <Content Include="Jvedio.ico" />
+    <None Include="Resources\eaec760e7817e27fad6a039260801e60.jpg" />
+    <None Include="Image\FormTools\文件下载.png" />
+    <None Include="Image\FormTools\数据库维护服务.png" />
+    <None Include="Image\FormTools\搜索.png" />
+    <None Include="Image\播放_64.png" />
+    <None Include="Image\wechat.jpg" />
+    <None Include="Image\alipay.jpg" />
+    <None Include="Image\pS\Test.png" />
+    <None Include="Image\pS\biaoqian.png" />
+    <None Include="Image\FormInfo\5-右5.png" />
+    <None Include="Image\FormInfo\5-左5.png" />
+    <None Include="Image\FormInfo\5-右5 %281%29.png" />
+    <None Include="Image\FormInfo\5-左5 %281%29.png" />
+    <None Include="Image\FormInfo\返回1.png" />
+    <None Include="Image\FormInfo\返回2.png" />
+    <None Include="Image\panel_bg.jpg" />
+    <None Include="Image\Jvedio.png" />
+    <None Include="Image\Jvedio_white.png" />
+    <None Include="Image\J.png" />
+    <None Include="Image\文件夹.png" />
+    <None Include="Image\pS\设置.png" />
+    <None Include="Image\箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChaoDownloader\ChaoDownloader.vbproj">
+      <Project>{200f8967-5a32-4a10-9c75-79f92e718279}</Project>
+      <Name>ChaoDownloader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\database\ChaoDatabase.vbproj">
+      <Project>{9f848a64-ced2-4b43-802e-0a0d0491db7f}</Project>
+      <Name>ChaoDatabase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scan and import\ChaoImport.vbproj">
+      <Project>{90ef7325-90a2-42d4-8e02-86eda4c5e709}</Project>
+      <Name>ChaoImport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShareClass\ShareClass.vbproj">
+      <Project>{7fc33d2b-ad8e-40d9-b6d1-f941cf9a1c89}</Project>
+      <Name>ShareClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\ILMerge.3.0.29\build\ILMerge.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\ILMerge.3.0.29\build\ILMerge.props'))" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(ProjectDir)Data $(ProjectDir)$(OutDir)Data\ /S</PostBuildEvent>
+  </PropertyGroup>
+</Project>
